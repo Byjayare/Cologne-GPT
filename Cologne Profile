@@ -1,0 +1,67 @@
+📁 Cologne-GPT/
+├── cologne_gpt_app.py
+├── scent_database.json
+{
+  "Creed Aventus": {
+    "profile": ["fruity", "smoky", "pineapple", "musk"],
+    "category": "Bold",
+    "occasion": ["special events", "evening"],
+    "type": "Niche"
+  },
+  "YSL Tuxedo": {
+    "profile": ["amber", "patchouli", "vanilla", "spicy"],
+    "category": "Luxury",
+    "occasion": ["date night", "evening", "formal"],
+    "type": "Designer"
+  },
+  "Dior Sauvage EDP": {
+    "profile": ["amber", "spicy", "bergamot", "clean"],
+    "category": "Modern",
+    "occasion": ["daily", "night out"],
+    "type": "Designer"
+  },
+  "Al Haramain Amber Oud Rouge": {
+    "profile": ["amber", "saffron", "jasmine", "woody"],
+    "category": "Sweet",
+    "occasion": ["evening", "signature scent"],
+    "type": "Clone"
+  },
+  "Maison Francis Kurkdjian Baccarat Rouge 540": {
+    "profile": ["amber", "saffron", "woody", "airy"],
+    "category": "Sweet",
+    "occasion": ["luxury events", "special occasions"],
+    "type": "Niche"
+  },
+  "Versace Eros Flame": {
+    "profile": ["citrus", "vanilla", "spicy", "woody"],
+    "category": "Sensual",
+    "occasion": ["date night", "evening"],
+    "type": "Designer"
+  },
+  "Lattafa Khamrah": {
+    "profile": ["cinnamon", "vanilla", "amber", "sweet"],
+    "category": "Warm",
+    "occasion": ["winter", "evening"],
+    "type": "Clone"
+  },
+  "Xerjoff Naxos": {
+    "profile": ["honey", "tobacco", "citrus", "spicy"],
+    "category": "Opulent",
+    "occasion": ["evening", "cool weather"],
+    "type": "Niche"
+  },
+  "YSL Y EDP": {
+    "profile": ["apple", "sage", "ambergris", "woody"],
+    "category": "Youthful",
+    "occasion": ["daily", "night out"],
+    "type": "Designer"
+  },
+  "Jean Lowe Immortel": {
+    "profile": ["grapefruit", "ginger", "amber", "fresh spicy"],
+    "category": "Versatile",
+    "occasion": ["daytime", "office"],
+    "type": "Clone"
+  }
+}
+
+└── combo_ratings.json
