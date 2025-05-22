@@ -263,70 +263,22 @@ if user_scents:
         st.subheader("📦 Saved Hybrids for Custom Requests")
         for combo in st.session_state.saved_hybrids:
             st.markdown(f"- {combo}")
-        if st.button("🧪 Request Custom Hybrid from My Decant Lab"):
-            st.success("Custom hybrid request submitted! We'll contact you shortly.")})")
-├── scent_database.json
-{
-  "Creed Aventus": {
-    "profile": ["fruity", "smoky", "pineapple", "musk"],
-    "category": "Bold",
-    "occasion": ["special events", "evening"],
-    "type": "Niche"
-  },
-  "YSL Tuxedo": {
-    "profile": ["amber", "patchouli", "vanilla", "spicy"],
-    "category": "Luxury",
-    "occasion": ["date night", "evening", "formal"],
-    "type": "Designer"
-  },
-  "Dior Sauvage EDP": {
-    "profile": ["amber", "spicy", "bergamot", "clean"],
-    "category": "Modern",
-    "occasion": ["daily", "night out"],
-    "type": "Designer"
-  },
-  "Al Haramain Amber Oud Rouge": {
-    "profile": ["amber", "saffron", "jasmine", "woody"],
-    "category": "Sweet",
-    "occasion": ["evening", "signature scent"],
-    "type": "Clone"
-  },
-  "Maison Francis Kurkdjian Baccarat Rouge 540": {
-    "profile": ["amber", "saffron", "woody", "airy"],
-    "category": "Sweet",
-    "occasion": ["luxury events", "special occasions"],
-    "type": "Niche"
-  },
-  "Versace Eros Flame": {
-    "profile": ["citrus", "vanilla", "spicy", "woody"],
-    "category": "Sensual",
-    "occasion": ["date night", "evening"],
-    "type": "Designer"
-  },
-  "Lattafa Khamrah": {
-    "profile": ["cinnamon", "vanilla", "amber", "sweet"],
-    "category": "Warm",
-    "occasion": ["winter", "evening"],
-    "type": "Clone"
-  },
-  "Xerjoff Naxos": {
-    "profile": ["honey", "tobacco", "citrus", "spicy"],
-    "category": "Opulent",
-    "occasion": ["evening", "cool weather"],
-    "type": "Niche"
-  },
-  "YSL Y EDP": {
-    "profile": ["apple", "sage", "ambergris", "woody"],
-    "category": "Youthful",
-    "occasion": ["daily", "night out"],
-    "type": "Designer"
-  },
-  "Jean Lowe Immortel": {
-    "profile": ["grapefruit", "ginger", "amber", "fresh spicy"],
-    "category": "Versatile",
-    "occasion": ["daytime", "office"],
-    "type": "Clone"
-  }
+        with st.form("custom_request_form"):
+            name = st.text_input("Your Name")
+            email = st.text_input("Your Email")
+            notes = st.text_area("Additional Notes")
+            submitted = st.form_submit_button("Submit Request")
+            if submitted:
+                # Simulated email sending (placeholder - backend email logic needed)
+                with open("custom_requests_log.txt", "a") as log:
+                    log.write(f"Name: {name}
+Email: {email}
+Hybrids: {st.session_state.saved_hybrids}
+Notes: {notes}
+
+")
+                st.success("Your request has been logged. We'll reach out to you at byjayare@gmail.com.")})")
+
 }
 
 └── combo_ratings.json
